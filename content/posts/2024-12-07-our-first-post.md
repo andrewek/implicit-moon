@@ -8,7 +8,7 @@ tags:
   - Eleventy
 ---
 
-Since we're buildng a personal site, we may as well put some blog posts in the
+Since we're building a personal site, we may as well put some blog posts in the
 works. Nothing says "This is a great use of time" like spending a bunch of
 effort on a personal site for blogging only to stop blogging after exactly
 three posts.

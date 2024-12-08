@@ -9,9 +9,12 @@
 
   <body>
     <main>
-      <h1>The Moon is Implicit</h1>
+      <h1>{{title or metadata.title}}</h1>
 
       {{ content | safe }}
     </main>
+    <footer>
+      <p>All content copyright 2024 {{metadata.author.name}}</p>
+    </footer>
   </body>
 </html>

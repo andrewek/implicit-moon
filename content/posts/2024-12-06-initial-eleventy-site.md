@@ -4,6 +4,7 @@ description: "Zero to Hello World"
 date: 2024-12-06
 layout: "layouts/base.njk"
 tags:
+  - posts
   - Eleventy
 ---
 

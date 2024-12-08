@@ -5,6 +5,7 @@ date: 2024-12-05
 layout: "layouts/base.njk"
 tags:
   - Eleventy
+  - posts
 ---
 
 I am building a site for myself, in the grand tradition of software developers

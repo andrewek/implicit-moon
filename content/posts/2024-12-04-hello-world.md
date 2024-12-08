@@ -3,6 +3,8 @@ title: Hello, World
 description: Introductory test post
 date: 2024-12-04
 layout: "layouts/base.njk"
+tags:
+  - posts
 ---
 
 Hello. This is a test post. It's also a place to put some test content so we can

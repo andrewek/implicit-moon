@@ -67,7 +67,8 @@ The `date` attribute doesn't have to match your file name. It does for me,
 because I prefer the date to be part of the URL slug, but you could just as
 easily name your file whatever you like. Eleventy (optionally) uses the date
 attribute to deterministically sort posts, though it's not the only way to sort
-them.
+them. [Read more about content dates in
+Eleventy](https://www.11ty.dev/docs/dates/), if you like.
 
 You may have noticed that the numbered list items all start with `1.` instead of
 going 1, 2, 3, ... _n_. In Markdown, so long as your first list item starts with

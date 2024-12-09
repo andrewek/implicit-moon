@@ -3,6 +3,8 @@
 This is a static site. It publishes to
 [https://implicitmoon.com](https://implictmoon.com) via Netlify.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/377f8cf8-a128-4290-9318-f8909564fdfd/deploy-status)](https://app.netlify.com/sites/implicitmoon/deploys)
+
 It's all open-source. Please don't plagiarize the posts or content, but feel
 free to use whatever of the source code you want however you want. It'll just be
 entirely at your own risk, with no promise of support or anything like that.

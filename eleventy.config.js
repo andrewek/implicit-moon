@@ -1,4 +1,10 @@
+import { DateTime } from "luxon"
+
 export default async function(eleventyConfig) {
+  eleventyConfig.addFilter("humanizedDate", (dateObj) => {
+    // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLLL d, yyyy");
+  });
 
 };
 

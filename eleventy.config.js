@@ -6,6 +6,9 @@ export default async function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLLL d, yyyy");
   });
 
+  eleventyConfig.addFilter("machineDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: "utc"}).toISODate()
+  });
 };
 
 export const config = {

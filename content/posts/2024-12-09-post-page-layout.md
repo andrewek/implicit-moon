@@ -341,7 +341,7 @@ Assuming you have several posts, go to one of your posts that uses the Post
 layout and check it out. You should see the previous and next links.
 
 Compare and contrast with [this
-commit](https://github.com/andrewek/implicit-moon/commit/7d041c4b5f1e707ea2d6f3ba434a00e8f68e9288)
+commit](https://github.com/andrewek/implicit-moon/commit/6a75a1a75dab1f97fcb58b12466a7ba1f3962c43)
 if you get stuck.
 
 ## Getting the Rest of Our Posts Fixed

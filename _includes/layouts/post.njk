@@ -9,3 +9,16 @@ layout: "layouts/base.njk"
 <article>
   {{content | safe}}
 </article>
+
+{% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.posts | getNextCollectionItem(page) %}
+
+<ul>
+  {% if previousPost %}
+    <li>Previous: <a href="{{previousPost.url}}">{{previousPost.data.title}}</a></li>
+  {% endif %}
+
+  {% if nextPost %}
+    <li>Next: <a href="{{nextPost.url}}">{{nextPost.data.title}}</a></li>
+  {% endif %}
+</ul>

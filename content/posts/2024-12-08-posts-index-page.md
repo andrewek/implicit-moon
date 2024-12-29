@@ -150,7 +150,7 @@ thing on the left to the function on the right. So we pass `collection.posts` to
 appear in reverse chronological order.
 
 Just make sure we [don't use
-`.reverse()`](https://www.11ty.dev/docs/collections/#do-not-use-array-reverse(\))
+`.reverse()`](https://www.11ty.dev/docs/collections/#do-not-use-array-reverse\(\))
 or other JS methods that mutate the list in place. Using something like
 Nunjuck's `reverse` filter (a pure function) is a much better choice.
 

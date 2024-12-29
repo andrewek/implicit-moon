@@ -2,7 +2,7 @@
 title: "Eleventy: Zero to Hello World"
 description: "Zero to Hello World"
 date: 2024-12-06
-layout: "layouts/base.njk"
+layout: "layouts/post.njk"
 tags:
   - posts
   - Eleventy

@@ -2,7 +2,7 @@
 title: Laying Out the Technical Vision of the Site
 description: Hopefully this helps us build the thing?
 date: 2024-12-05
-layout: "layouts/base.njk"
+layout: "layouts/post.njk"
 tags:
   - Eleventy
   - posts

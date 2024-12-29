@@ -2,7 +2,7 @@
 title: Hello, World
 description: Introductory test post
 date: 2024-12-04
-layout: "layouts/base.njk"
+layout: "layouts/post.njk"
 tags:
   - posts
 ---

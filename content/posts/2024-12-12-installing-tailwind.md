@@ -466,9 +466,22 @@ Subtle, but useful to know. We'll still keep the regular `&` in our `start`
 script because we want the Tailwind CLI and Eleventy's watcher to run
 concurrently, instead of sequentially.
 
+Let's commit and push again. And then we'll see it fail again. This is because
+11ty's build completes (including all assets ported over) before Tailwind's
+compilation finishes; the resultant CSS files aren't pulled over.
+
+Now let's swap the order so that Tailwind's build happens first (it scans our
+source), then Eleventy does its thing (this is still in your `package.json`):
+
+```js
+"build": "NODE_ENV=production ELEVENTY_ENV=production npx tailwindcss -i ./assets/base.css -o ./assets/out.css --minify && eleventy",
+```
+
+Success! It works!
+
 ## Next Steps
 
 Up next, we'll actually apply some styles to our templates. That one's going to
-be a doozy.
+be a doozy. Even more than this step was.
 
 {% endraw %}

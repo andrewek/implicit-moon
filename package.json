@@ -5,7 +5,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production ELEVENTY_ENV=production npx @11ty/eleventy & tailwindcss -i ./assets/base.css -o ./assets/out.css --minify",
+    "build": "NODE_ENV=production ELEVENTY_ENV=production npx @11ty/eleventy && tailwindcss -i ./assets/base.css -o ./assets/out.css --minify",
     "start": "npx @11ty/eleventy --serve & tailwindcss -i ./assets/base.css -o ./assets/out.css --watch"
   },
   "author": {

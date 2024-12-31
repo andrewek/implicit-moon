@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve & tailwindcss -i ./assets/base.css -o ./assets/out.css --watch"
   },
   "author": {
     "name": "Andrew Ek",

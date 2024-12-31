@@ -3,4 +3,3 @@ node_modules/
 _site/
 yarn.lock
 .cache
-assets/out.css

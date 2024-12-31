@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A website",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve"

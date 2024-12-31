@@ -417,9 +417,54 @@ Fortunately, we can do that pretty easily:
 "build": "npx @11ty/eleventy & tailwindcss -i ./assets/base.css -o ./assets/out.css --minify
 ```
 
-Commit it all, then push, and we should see our site swap from the browser
-defaults for unstyled HTML to some differently unstyled HTML (with a few canary
-lines for good measure).
+Commit it all, then push. This should work, right?
+
+(Spoiler: it won't)
+
+On Netlify, you'll see an error that looks like this under the deploys tab:
+
+<pre>
+12:02:48 AM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+12:02:48 AM: Deploy site
+12:02:48 AM: ────────────────────────────────────────────────────────────────
+12:02:48 AM: ​
+12:02:48 AM: Section completed: deploying
+12:02:48 AM: ​
+12:02:48 AM: Configuration error
+12:02:48 AM: ────────────────────────────────────────────────────────────────
+12:02:48 AM: ​
+12:02:48 AM:   Error message
+12:02:48 AM:   Deploy did not succeed: Deploy directory '_site' does not exist
+12:02:48 AM: ​
+12:02:48 AM:   Resolved config
+12:02:48 AM:   build:
+12:02:48 AM:     command: npm run build
+12:02:48 AM:     commandOrigin: config
+12:02:48 AM:     publish: /opt/build/repo/_site
+12:02:48 AM:     publishOrigin: config
+</pre>
+
+What's happening is the Tailwind build completes and exits before the Eleventy
+compilation is done. Netlify's deploy sees the exit code (from the Tailwind
+build) and assumes the actual build is done; but it isn't. `_site` doesn't exist
+yet because the Eleventy build hasn't yet happened. The site cannot be deployed.
+We are all sad.
+
+Let's fix this.
+
+In our `package.json` file, we use `&` to chain together the Eleventy and
+Tailwind commands. `&` in a bash script runs everything to the right in the
+background, meaning it can exit early.
+
+What we probably want instead is `&&`, which forces sequential running:
+
+```js
+"build": "npx @11ty/eleventy && tailwindcss -i ./assets/base.css -o ./assets/out.css --minify
+```
+
+Subtle, but useful to know. We'll still keep the regular `&` in our `start`
+script because we want the Tailwind CLI and Eleventy's watcher to run
+concurrently, instead of sequentially.
 
 ## Next Steps
 

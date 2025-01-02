@@ -27,7 +27,7 @@
 
       <div class="px-6 py-12">
         <div class="mx-auto max-w-lg sm:max-w-2xl text-center ">
-          <h1 class="text-wrap text-2xl sm:text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-7xl">
+          <h1 class="text-wrap text-4xl sm:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
             {{title or metadata.title}}
           </h1>
           <p class="mt-8 text-pretty text-md font-medium text-gray-500 dark:text-gray-200 sm:text-xl/8">
@@ -37,7 +37,8 @@
       </div>
 
       <div class="grow mx-auto w-full max-w-prose">
-        <main class="prose prose-sm md:prose-base lg:prose-lg dark:prose-invert p-6">
+        <main class="prose prose-sm md:prose-base lg:prose-lg dark:prose-invert
+          p-6 prose-a:text-blue-500">
           {{ content | safe }}
         </main>
       </div>

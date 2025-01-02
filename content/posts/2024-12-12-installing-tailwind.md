@@ -124,8 +124,10 @@ On pretty much any page you want, add something like this:
 What you should see (before we style) is this, that is, the H4s should be styled
 with the default system fonts and no colors, etc.
 
-> <h4>This is some test text</h4>
-> <h4>This is more test text</h4>
+<div class="not-prose">
+<h4>This is some test text</h4>
+<h4>This is more test text</h4>
+</div>
 
 What it will become after we get Tailwind working is this:
 

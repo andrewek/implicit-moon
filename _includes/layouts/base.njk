@@ -8,14 +8,44 @@
     <link href="/style.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <main>
-      <h1>{{title or metadata.title}}</h1>
+  <body class="w-screen min-w-screen">
+    <div class="bg-slate-50 dark:bg-slate-900 h-full min-h-screen flex flex-col w-full min-w-max">
 
-      {{ content | safe }}
-    </main>
-    <footer>
-      <p>All content copyright 2024 {{metadata.author.name}}</p>
-    </footer>
+      <header class="sticky top-0 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-sm">
+        <nav class="mx-auto flex max-w-5xl items-center p-6 lg:px-8" aria-label="global">
+          <div class="flex flex-1 text-md font-semibold text-gray-900 dark:text-white">
+            <a href="/" class="-m-1.5 p-1.5">
+              {{metadata.title}}
+            </a>
+          </div>
+          <div class="flex gap-x-12">
+            <a class="text-sm/6 text-gray-900 dark:text-white" href="/">Home</a>
+            <a class="text-sm/6 text-gray-900 dark:text-white" href="/posts">Posts</a>
+          </div>
+        </nav>
+      </header>
+
+      <div class="px-6 p-12 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h1 class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-7xl">
+            {{title or metadata.title}}
+          </h1>
+          <p class="mt-8 text-pretty text-lg font-medium text-gray-500 dark:text-gray-200 sm:text-xl/8">
+            {{description or metadata.description}}
+          </p>
+        </div>
+      </div>
+
+      <main class="grow w-full max-w-5xl px-6 mx-auto">
+        {{ content | safe }}
+      </main>
+
+      <footer class="w-full max-w-5xl mx-auto justify-self-end text-gray-600 dark:text-gray-400">
+        <div class="px-6 py-8 text-sm/6">
+          <p>All content &copy; 2025 {{metadata.author.name}}. All rights
+          reserved.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

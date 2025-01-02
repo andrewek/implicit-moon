@@ -8,8 +8,8 @@
     <link href="/style.css" rel="stylesheet" />
   </head>
 
-  <body class="min-w-screen bg-slate-50 dark:bg-slate-900 min-h-screen h-full">
-    <div class="flex flex-col px-4 w-full">
+  <body class="min-w-screen bg-slate-50 dark:bg-slate-900">
+    <div class="flex flex-col px-4 w-full min-h-screen h-full">
 
       <header class="sticky top-0 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-sm">
         <nav class="mx-auto flex max-w-3xl sm:max-w-5xl items-center p-6 lg:px-8" aria-label="global">
@@ -36,12 +36,9 @@
         </div>
       </div>
 
-      <div class="grow mx-auto w-full max-w-prose">
-        <main class="prose prose-sm md:prose-base lg:prose-lg dark:prose-invert
-          p-6 prose-a:text-blue-500">
-          {{ content | safe }}
-        </main>
-      </div>
+      <main class="grow mx-auto w-full max-w-prose prose prose-sm md:prose-base lg:prose-lg dark:prose-invert p-6 prose-a:text-blue-500">
+        {{ content | safe }}
+      </main>
 
       <footer class="w-full max-w-5xl mx-auto justify-self-end text-gray-600 dark:text-gray-400">
         <div class="px-6 py-8 text-sm/6">

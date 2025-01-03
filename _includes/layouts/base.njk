@@ -12,37 +12,41 @@
     <div class="flex flex-col px-4 w-full min-h-screen h-full">
 
       <header class="sticky top-0 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-sm">
-        <nav class="mx-auto flex max-w-3xl sm:max-w-5xl items-center p-6 lg:px-8" aria-label="global">
+        <nav class="mx-auto flex max-w-3xl sm:max-w-5xl items-center p-6
+                    lg:px-8" aria-label="global">
           <div class="flex flex-1 text-md font-semibold text-gray-900 dark:text-white">
             <a href="/" class="-m-1.5 p-1.5">
               {{metadata.title}}
             </a>
           </div>
-          <div class="flex gap-x-12">
-            <a class="text-sm/6 text-gray-900 dark:text-white" href="/">Home</a>
-            <a class="text-sm/6 text-gray-900 dark:text-white" href="/posts">Posts</a>
+          <div class="flex gap-x-4 sm:gap-x-12">
+            <a class="text-sm/6 text-gray-900 dark:text-white hover:underline" href="/">Home</a>
+            <a class="text-sm/6 text-gray-900 dark:text-white hover:underline" href="/posts">Posts</a>
           </div>
         </nav>
       </header>
 
       <div class="px-6 py-12">
-        <div class="mx-auto max-w-lg sm:max-w-2xl text-center ">
+        <div class="mx-auto max-w-lg sm:max-w-2xl text-center">
           <h1 class="text-wrap text-4xl sm:text-6xl/tight font-bold tracking-tight
             bg-clip-text text-transparent bg-gradient-to-r from-blue-600
             dark:from-blue-500 to-purple-600 dark:to-purple-500">
             {{title or metadata.title}}
           </h1>
-          <p class="mt-8 text-pretty text-md font-medium text-gray-700 dark:text-gray-200 sm:text-xl/8">
+          <p class="mt-8 text-pretty text-md font-medium text-gray-700
+                    dark:text-gray-200 sm:text-xl/8">
             {{description or metadata.description}}
           </p>
         </div>
       </div>
 
-      <main class="grow mx-auto w-full max-w-prose prose prose-sm md:prose-base lg:prose-lg dark:prose-invert p-6 prose-a:text-blue-500">
+      <main class="grow mx-auto w-full max-w-5xl prose prose-sm md:prose-base
+                   lg:prose-lg dark:prose-invert p-6 prose-a:text-blue-500">
         {{ content | safe }}
       </main>
 
-      <footer class="w-full max-w-5xl mx-auto justify-self-end text-gray-600 dark:text-gray-400">
+      <footer class="w-full max-w-5xl mx-auto justify-self-end text-gray-600
+                     dark:text-gray-400">
         <div class="px-6 py-8 text-sm/6">
           <p>All content &copy; 2025 {{metadata.author.name}}. All rights
           reserved.</p>

@@ -42,11 +42,11 @@ We want something that looks like this:
 <div class="not-prose">
   <div class="px-6 py-12">
     <div class="mx-auto max-w-lg sm:max-w-2xl text-center">
-      <h1 class="text-wrap text-4xl sm:text-6xl/tight font-bold tracking-tight
+      <h3 class="text-wrap text-4xl sm:text-6xl/tight font-bold tracking-tight
         bg-clip-text text-transparent bg-gradient-to-r from-blue-600
         dark:from-blue-500 to-purple-600 dark:to-purple-500">
         My Very Cool Title Has a Neat Gradient Effect
-      </h1>
+      </h3>
       <p class="mt-8 text-pretty text-md font-medium text-gray-700
                 dark:text-gray-200 sm:text-xl/8">
         ... And I am here for it!
@@ -83,10 +83,10 @@ Perhaps this is an example:
 <div class="not-prose">
   <div class="px-6 py-12">
     <div class="mx-auto max-w-lg sm:max-w-2xl text-center">
-      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-gray-900
+      <h3 class="text-4xl sm:text-6xl font-bold tracking-tight text-gray-900
                  dark:text-white">
         My Very Cool Hero Section Has a Gradient!
-      </h1>
+      </h3>
       <p class="mt-8 text-pretty text-md font-medium text-gray-700
                 dark:text-gray-200 sm:text-xl/8">
         Except it doesn't. Not quite yet. We're getting there.
@@ -130,11 +130,11 @@ Or, in action, like this:
 <div class="not-prose">
   <div class="px-6 py-12">
     <div class="mx-auto max-w-lg sm:max-w-2xl text-center">
-      <h1 class="text-wrap text-4xl sm:text-6xl font-bold tracking-tight
+      <h3 class="text-wrap text-4xl sm:text-6xl font-bold tracking-tight
         bg-clip-text text-transparent bg-gradient-to-r from-blue-600
         dark:from-blue-500 to-purple-600 dark:to-purple-500">
         My Very Cool Title Page Has a Fun Gradient!
-      </h1>
+      </h3>
       <p class="mt-8 text-pretty text-md font-medium text-gray-700
                 dark:text-gray-200 sm:text-xl/8">
         Look at all the colors! They are colors!
@@ -155,11 +155,11 @@ line above).
 <div class="not-prose">
   <div class="px-6 py-12">
     <div class="mx-auto max-w-lg sm:max-w-2xl text-center">
-      <h1 class="text-wrap text-4xl sm:text-6xl font-bold tracking-tight
+      <h3 class="text-wrap text-4xl sm:text-6xl font-bold tracking-tight
         bg-clip-text text-transparent bg-gradient-to-r from-blue-600
         dark:from-blue-500 to-purple-600 dark:to-purple-500">
         I am really going to eat significantly more jolly yogurt and go jogging
-      </h1>
+      </h3>
       <p class="mt-8 text-pretty text-md font-medium text-gray-700
                 dark:text-gray-200 sm:text-xl/8">
         Something is screwy here. Look at those Y's and G's and J's!
@@ -215,11 +215,11 @@ Now what we should have is this:
 <div class="not-prose">
   <div class="px-6 py-12">
     <div class="mx-auto max-w-lg sm:max-w-2xl text-center">
-      <h1 class="text-wrap text-4xl sm:text-6xl/tight font-bold tracking-tight
+      <h3 class="text-wrap text-4xl sm:text-6xl/tight font-bold tracking-tight
         bg-clip-text text-transparent bg-gradient-to-r from-blue-600
         dark:from-blue-500 to-purple-600 dark:to-purple-500">
         I am really going to eat significantly more jolly yogurt and go jogging
-      </h1>
+      </h3>
       <p class="mt-8 text-pretty text-md font-medium text-gray-700
                 dark:text-gray-200 sm:text-xl/8">
         The text is much less screwy. We'll see how the yogurt and jogging are.

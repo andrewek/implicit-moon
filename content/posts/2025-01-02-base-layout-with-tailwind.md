@@ -53,6 +53,22 @@ Use a [lorem ipsum generator](https://loremipsum.io/) if you want.
 
 ## A Brief Aside on Developing for Responsiveness and Defensive CSS
 
+Regardless of whether the work we are doing is appealing to very many people, we
+do have, I believe, a duty to make that work _accessible_ and _functional_ for
+the people who do want to engage with it.
+
+I'm not going to feel even a tiny bit sad if someone says "Andrew, I am glad you
+have this website, but none of the things you write about are interesting to me
+so I will not visit it."
+
+I will feel _very responsible_ (and sad in a way that should spur action) if
+someone says to me "I really want to read the things you're writing or use the
+software you are building, but I cannot because it just doesn't work for me."
+
+Part of this responsive design. Part of it is accessibility. Part of it is just
+paying attention to where and how things break, and to how people interact with
+the world.
+
 Responsive design can and should go beyond "the site's layout adjusts as the
 screen becomes wider or narrower" -- this was the original definition, and it's
 good, but not sufficient.
@@ -66,6 +82,7 @@ Our designs should also adjust appropriately to account for:
 - If the user wants to crank up the contrast to make text more visible
 - If the user overrides the provided or system font
 - If the user is on a very low-bandwidth connection
+- If the user cannot make use of audio cues in our software
 
 We should also account for content challenges like:
 

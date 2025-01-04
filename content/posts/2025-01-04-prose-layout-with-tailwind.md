@@ -1,6 +1,6 @@
 ---
 title: "Eleventy: Prose Layout for Content"
-description: "All about typography"
+description: "All about typography .... except not?"
 date: 2025-01-04
 layout: "layouts/post.njk"
 tags:

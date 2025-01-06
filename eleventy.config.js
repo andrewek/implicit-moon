@@ -1,8 +1,12 @@
 import { DateTime } from "luxon"
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
 
 export default async function(eleventyConfig) {
   // Use .eleventyignore in lieu of .gitignore
   eleventyConfig.setUseGitIgnore(false);
+
+  // Highlight our syntax please
+  eleventyConfig.addPlugin(syntaxHighlight)
 
   // Pass tailwind-generated styles through
   eleventyConfig.addPassthroughCopy({

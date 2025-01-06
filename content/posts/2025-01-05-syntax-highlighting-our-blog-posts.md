@@ -208,6 +208,19 @@ note I have at this time.
 There are a whole bunch of [official PrismJS
 plugins](https://prismjs.com/#plugins).
 
+## Possible Visual Bug
+
+One thing to note about the syntax highlighting - it applies `z-index: 1` to all
+tokens within a code sample. If you have a sticky header (like we created on our
+site!) or other element behind or in front of which other elements pass, you'll
+want to make sure it behaves as desired with your syntax highlighting. I added
+`z-50` to the `<header>` element on this site, as otherwise the
+syntax-highlighted lines would sneak in front of the header instead of blurring
+behind like they should.
+
+[See the commit
+here](https://github.com/andrewek/implicit-moon/commit/8939a49569d2555c8d208195ae14873d5f135933)
+
 ## Wrapping Up
 
 As of the end of this post, we can include syntax-highlighted code blocks into

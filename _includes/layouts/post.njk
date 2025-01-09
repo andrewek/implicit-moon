@@ -13,12 +13,42 @@ layout: "layouts/base.njk"
 {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.posts | getNextCollectionItem(page) %}
 
-<ul>
+<div class="flex items-center justify-between">
   {% if previousPost %}
-    <li>Previous: <a href="{{previousPost.url}}">{{previousPost.data.title}}</a></li>
+    <div class="flex w-0 flex-1">
+      <a href="{{previousPost.url}}"
+         class="inline-flex items-center pr-1 pt-4 text-sm text-gray-500
+                dark:text-gray-50 hover:underline">
+        <svg class="mr-3 size-5 text-gray-500" viewBox="0 0 20 20"
+          fill="currentColor" aria-hidden="true" data-slot="icon">
+          <path fill-rule="evenodd" d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1
+          1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1
+          0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18
+          10Z" clip-rule="evenodd" />
+        </svg>
+        <span class="sr-only">Previous Post: </span>
+        <span class="max-w-72 w-full">{{previousPost.data.title}}</span>
+      </a>
+    </div>
   {% endif %}
 
   {% if nextPost %}
-    <li>Next: <a href="{{nextPost.url}}">{{nextPost.data.title}}</a></li>
+    <div class="flex w-0 flex-1 justify-end">
+      <a href="{{nextPost.url}}"
+         class="inline-flex items-center pr-1 pt-4 text-sm text-gray-500
+                dark:text-gray-50 hover:underline">
+        <span class="sr-only">Next Post: </span>
+        <span class="max-w-72 w-full">
+          {{nextPost.data.title}}
+        </span>
+        <svg class="ml-3 size-5 text-gray-500" viewBox="0 0 20 20"
+             fill="currentColor" aria-hidden="true" data-slot="icon">
+          <path fill-rule="evenodd" d="M2 10a.75.75 0 0 1
+          .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0
+          1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z"
+          clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
   {% endif %}
-</ul>
+</div>

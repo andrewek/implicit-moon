@@ -2,9 +2,7 @@
 title: "Eleventy: Site Header Section"
 description: "I need a hero"
 date: 2025-01-03
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

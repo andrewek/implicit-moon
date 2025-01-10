@@ -2,9 +2,7 @@
 title: "Eleventy: Installing Tailwind"
 description: "Let's make our posts look nicer yet!"
 date: 2024-12-12
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

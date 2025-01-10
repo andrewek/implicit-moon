@@ -2,9 +2,7 @@
 title: "Eleventy: Deploying to Netlify"
 description: "Let's show the world"
 date: 2024-12-08
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

@@ -2,9 +2,7 @@
 title: "Eleventy: Better Next and Previous Buttons"
 description: "We're styling everything else, so why not this?"
 date: 2025-01-06
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

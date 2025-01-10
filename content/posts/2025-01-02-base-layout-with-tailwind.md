@@ -2,9 +2,7 @@
 title: "Eleventy: Base Site Layout"
 description: "Headers and bodies and footers, oh my!"
 date: 2025-01-02
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

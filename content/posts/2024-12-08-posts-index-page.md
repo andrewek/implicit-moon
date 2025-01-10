@@ -2,9 +2,7 @@
 title: "Eleventy: Posts Index Page"
 description: "Make Our Posts Findable"
 date: 2024-12-08
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

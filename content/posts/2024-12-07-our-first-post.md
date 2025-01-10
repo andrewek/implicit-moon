@@ -2,9 +2,7 @@
 title: "Eleventy: Our First Post"
 description: "Blogging / Blogging / Blogging"
 date: 2024-12-07
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

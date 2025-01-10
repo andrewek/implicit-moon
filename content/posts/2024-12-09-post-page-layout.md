@@ -2,9 +2,7 @@
 title: "Eleventy: Post Page Layout"
 description: "Let's make our posts look nicer"
 date: 2024-12-09
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 

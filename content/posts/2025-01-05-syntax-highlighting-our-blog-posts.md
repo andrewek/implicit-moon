@@ -2,9 +2,7 @@
 title: "Eleventy: Syntax Highlighting Our Code Samples"
 description: "Just a splash of color"
 date: 2025-01-05
-layout: "layouts/post.njk"
 tags:
-  - posts
   - Eleventy
 ---
 
